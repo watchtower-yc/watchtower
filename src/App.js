@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import AppNav from "./components/nav/nav.component";
+import About from "./routes/about/about.component";
+import Giving from "./routes/giving/giving.component";
+import Home from "./routes/home/home.route";
+import Sermons from "./routes/sermons/sermons.route";
+import Testimonies from "./routes/testimonies/testimonies.route";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<AppNav />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/online-giving" element={<Giving />} />
+        <Route path="/sermons" element={<Sermons />} />
+        <Route path="testimonies" element={<Testimonies />} />
+      </Route>
+    </Routes>
   );
 }
 
