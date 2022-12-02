@@ -33,7 +33,7 @@ const Nav = () => {
               </button>
             </Fade>
           </div>
-          <span className="menu hidden lg:flex items-center gap-x-12 md:gap-x-8">
+          <span className="menu hidden lg:flex items-center gap-x-12 md:gap-x-8 text-[#0B0037]">
             {routes.map((route) => (
               <Link key={route.name} to={route.link} className="">
                 {route.name}
@@ -49,7 +49,7 @@ const Nav = () => {
               !showNav && "hidden"
             }`}
           >
-            <div className="w-full px-12 py-10 bg-[#030A49] h-screen">
+            <div className="w-full px-12 py-10 bg-[#0B0037] h-screen">
               <div className="flex justify-between mb-8">
                 <BrandLogo logoType="white" height="h-12" onClick={handleNav} />
                 <button className="text-white p-4" onClick={handleNav}>
