@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const AppNav = () => {
   return (
-    <div>
+    <div className=" mx-16 " >
       <p>nav</p>
       <Outlet />
     </div>
