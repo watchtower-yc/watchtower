@@ -1,17 +1,17 @@
 // import bannerImg from "../../assets/img/banner-img.png";
 import AppButton from "../../components/app-button/app-button.component";
 import Footer from "../../components/footer/footer.component";
+import CountdownList from '../../components/countdown-list/countdown-list.component'
 
 const Home = () => {
   return (
     <div>
       <div className="banner relative text-white py-48 mb-20">
-        {/* <div className="bg-cover" style={{ backgroundImage: `url(${bannerImg})` }}></div> */}
         <div className="absolute inset-0 -z-20 overflow-hidden">
           <img
             src={require("../../assets/img/banner-img.png")}
             alt=""
-            className="overflow-hidden"
+            className="object-cover h-full w-full"
           />
         </div>
         <div className="absolute inset-0 bg-black opacity-50 -z-10"></div>
@@ -20,7 +20,7 @@ const Home = () => {
         </p>
         <p className="text-center">to our weekely service.</p>
       </div>
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto mb-20 px-4">
         <div className="grid md:grid-cols-2">
           <div className="self-center">
             <p className="font-bold text-2xl uppercase text-center">
@@ -59,7 +59,7 @@ const Home = () => {
           gathering time
         </p>
         <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
-        <div className="mt-8 grid grid-cols-2">
+        <div className="mt-8 grid md:grid-cols-2 gap-8">
           <div className="text-center">
             <p className="font-medium text-md uppercase mb-4">
               mid-week service
@@ -67,7 +67,7 @@ const Home = () => {
             <p className="text-sm font-light">Wednesday: Word Communion - </p>
             <p className="text-sm font-light">5:00 pm</p>
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <p className="font-medium text-md uppercase mb-4">
               mid-week service
             </p>
@@ -83,51 +83,26 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="mb-20">
+      <section className="mb-20 px-4">
         <p className="font-bold text-2xl uppercase text-center">
           upcoming event
         </p>
         <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
-        <div className="h-80 overflow-hidden mt-8">
+        <div className="overflow-hidden mt-8">
           <img
-            src={require("../../assets/img/christmas.png")}
+            src={require("../../assets/img/carol-banner.png")}
             alt="next-event"
             className="mx-auto"
           />
         </div>
         <div className="container mx-auto mb-12">
-          <div className="flex justify-around mt-8">
-            <div className="w-32 h-32 rounded-full text-center border-2 border-[#0B0037] flex flex-col justify-end">
-              <p className="font-bold text-4xl pb-2 text-[#0B0037]">23</p>
-              <p className="bg-[#0B0037] text-white text-sm rounded-b-full py-5 uppercase">
-                days
-              </p>
-            </div>
-            <div className="w-32 h-32 rounded-full text-center border-2 border-[#0B0037] flex flex-col justify-end">
-              <p className="font-bold text-4xl pb-2 text-[#0B0037]">10</p>
-              <p className="bg-[#0B0037] text-white text-sm rounded-b-full py-5 uppercase">
-                hours
-              </p>
-            </div>
-            <div className="w-32 h-32 rounded-full text-center border-2 border-[#0B0037] flex flex-col justify-end">
-              <p className="font-bold text-4xl pb-2 text-[#0B0037]">41</p>
-              <p className="bg-[#0B0037] text-white text-sm rounded-b-full py-5 uppercase">
-                minutes
-              </p>
-            </div>
-            <div className="w-32 h-32 rounded-full text-center border-2 border-[#0B0037] flex flex-col justify-end">
-              <p className="font-bold text-4xl pb-2 text-[#0B0037]">00</p>
-              <p className="bg-[#0B0037] text-white text-sm rounded-b-full py-5 uppercase">
-                seconds
-              </p>
-            </div>
-          </div>
+          <CountdownList />
         </div>
         <div className="flex justify-center align-center">
           <AppButton children="more details" buttonType="primary" />
         </div>
       </section>
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto mb-20 px-4">
         <p className="font-bold text-2xl uppercase text-center">plan a visit</p>
         <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
         <div className="mt-8 grid gap-8 md:grid-cols-2">
@@ -150,7 +125,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto mb-20 px-4">
         <p className="font-bold text-2xl uppercase text-center">
           subscribe to our newsletter
         </p>
