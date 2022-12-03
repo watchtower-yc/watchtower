@@ -1,5 +1,6 @@
 import PastorT from "../images/Pastor.png";
 import PastorI from "../images/Apastor.png";
+import Truth from "../images/truth.png";
 
 const About = () => {
   return (
@@ -98,26 +99,89 @@ const About = () => {
       </section>
 
       {/* Anthem */}
-      <section>
+      <section className=" mt-14">
         <h1 className=" font-extrabold text-2xl text-blue-900">
-          About Watchtower
+          Watchtower Anthem
         </h1>
 
-        <div className=" grid grid-cols-2 gap-8">
-          <div className=" px-5">
+        <div className=" grid grid-cols-1 md:grid-cols-2 mt-8 gap-8">
+          <div className=" px-0 py-8 lg:px-32 flex justify-center items-center">
             <p>
               We are Watchmen, in the tower, We bear the sword, to engrave the
               world, As we proclaim, Jesus, The Way, Truth and Life, We are
               Watchmen, in the tower.
             </p>
           </div>
-          <div className=" px-5">
+          <div className="px-0 py-8 lg:px-32 flex justify-center items-center">
             <p>
               We are one big family, steadfast in Christ Having our gazed fixed
               on the cross, We have life eternal, Having our gaze fixed, on the
               cross, We have life eternal, Sitted with him, sitted with him, In
               the heaven.
             </p>
+          </div>
+        </div>
+
+        <h1 className=" mt-16 font-extrabold text-2xl text-blue-900">
+          Watchtower Declaration
+        </h1>
+
+        <div className=" grid grid-cols-2">
+          <div className=" px-0 py-8 lg:px-32 flex justify-center items-center">
+            <p>
+              We are Watchmen, in the tower, We bear the sword, to engrave the
+              world, As we proclaim, Jesus, The Way, Truth and Life, We are
+              Watchmen, in the tower.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* watchtower sections */}
+      <section className=" mt-14">
+        <h1 className=" mt-16 font-extrabold text-2xl text-blue-900">
+          The Watchtower Sections
+        </h1>
+
+        <div className=" grid grid-cols-2">
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
+          </div>
+
+          <div className=" mt-8 text-center">
+            <img src={Truth} alt="" />
+            <h5 className=" font-bold text-lg">The Engravers</h5>
           </div>
         </div>
       </section>
