@@ -43,7 +43,7 @@ const Giving = () => {
       placeholder: "Enter Phone Number",
       errorMessage: "Must be a valid phone number",
       label: "Phone",
-      pattern: "^[+]?[(]?[0-9]{3,20}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]",
+      pattern: "^[+]?[(]?[0-9]{3,20}[)]",
       required: true,
     },
     {
@@ -53,7 +53,7 @@ const Giving = () => {
       placeholder: "Enter amount paid",
       errorMessage: "Must be a valid number",
       label: "Amount",
-      pattern: "^[+]?[(]?[0-9]{3,20}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]",
+      pattern: "^[+]?[(]?[0-9]{3,20}",
       required: true,
     },
     {
