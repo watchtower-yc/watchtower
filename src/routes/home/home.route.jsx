@@ -96,7 +96,7 @@ const Home = () => {
           />
         </div>
         <div className="container mx-auto mb-12">
-          <CountdownList />
+          {/* <CountdownList /> */}
         </div>
         <div className="flex justify-center align-center">
           <AppButton children="more details" buttonType="primary" />
