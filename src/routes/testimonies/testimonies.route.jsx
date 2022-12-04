@@ -31,7 +31,7 @@ const Testimonies = () => {
       placeholder: "Enter Phone Number",
       errorMessage: "Must be a valid phone number",
       label: "Last Name",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      pattern: "^[0-9]{11-15}$",
       required: true,
     },
   ];
@@ -60,9 +60,19 @@ const Testimonies = () => {
         <div className="mt-20">
           <form action="">
             <div>
-              {inputs.map((input) => (
-                <FormInput />
-              ))}
+            {inputs.map((input) => (
+                  <FormInput
+                    label={input.label}
+                    errMsg={input.errorMessage}
+                    name={input.name}
+                    // value={inputValue[input.name]}
+                    // onChange={handleInput}
+                    placeholder={input.placeholder}
+                    required
+                    pattern={input.pattern}
+                    type={input.type}
+                  />
+                ))}
             </div>
             <div className="mb-4">
               <label htmlFor="">

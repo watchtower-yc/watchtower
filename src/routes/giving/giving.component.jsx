@@ -43,7 +43,7 @@ const Giving = () => {
       placeholder: "Enter Phone Number",
       errorMessage: "Must be a valid phone number",
       label: "Phone",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      pattern: "^[0-9]{11-15}$",
       required: true,
     },
     {
@@ -75,17 +75,20 @@ const Giving = () => {
 
   const saveData = async () => {
     try {
-        await axios.post("https://api.apispreadsheets.com/data/wQ7bAaaHnQGEuq1g/", inputValue)
-    } catch(err) {
-        console.log(err);
+      await axios.post(
+        "https://api.apispreadsheets.com/data/wQ7bAaaHnQGEuq1g/",
+        inputValue
+      );
+    } catch (err) {
+      console.log(err);
     }
-  }
+  };
 
-  const submitForm = async(e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
     console.log(inputValue);
-    await saveData()
-    showSuccess()
+    await saveData();
+    showSuccess();
     return;
   };
 
@@ -146,18 +149,20 @@ const Giving = () => {
                 <span className="font-bold">GTBank: </span> *737*32*Amount*1702#
               </p>
               <p className="text-sm itallic mb-2">
-                <span className="font-bold">UBA: </span> *737*32*Amount*1702#
+                <span className="font-bold">UBA: </span> *919*4*account
+                number*amount#
               </p>
               <p className="text-sm itallic mb-2">
-                <span className="font-bold">Polaris: </span>{" "}
-                *737*32*Amount*1702#
+                <span className="font-bold">Polaris: </span> *833*Amount*Account
+                Number#
               </p>
               <p className="text-sm itallic mb-2">
-                <span className="font-bold">Zenith: </span> *737*32*Amount*1702#
+                <span className="font-bold">Zenith: </span> *966*Amount*Account
+                Number#
               </p>
               <p className="text-sm itallic mb-2">
                 <span className="font-bold">Firstbank: </span>{" "}
-                *737*32*Amount*1702#
+                *894*Amount*Account number#
               </p>
             </div>
             <div>
