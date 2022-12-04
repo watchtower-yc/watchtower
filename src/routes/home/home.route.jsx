@@ -14,11 +14,11 @@ const Home = () => {
             className="object-cover h-full w-full"
           />
         </div>
-        <div className="absolute inset-0 bg-black opacity-50 -z-10"></div>
-        <p className="text-center">
-          YOU'RE <span>invited</span>
+        <div className="absolute inset-0 bg-black opacity-50 -z-10 header"></div>
+        <p className="text-center mont text-4xl md:text-8xl">
+          YOU'RE <span className="paris">invited</span>
         </p>
-        <p className="text-center">to our weekely service.</p>
+        <p className="text-center mont">to our weekely service.</p>
       </div>
       <section className="container mx-auto mb-20 px-4">
         <div className="grid md:grid-cols-2">
@@ -96,7 +96,7 @@ const Home = () => {
           />
         </div>
         <div className="container mx-auto mb-12">
-          <CountdownList />
+          {/* <CountdownList /> */}
         </div>
         <div className="flex justify-center align-center">
           <AppButton children="more details" buttonType="primary" />
