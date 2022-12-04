@@ -3,7 +3,8 @@ import { useState } from "react";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { Fade } from "react-reveal";
-const CopyText = () => {
+
+const CopyText = ({ number }) => {
   const [copied, setCopied] = useState();
 
   const copyTextToClipboard = () => {
@@ -19,7 +20,7 @@ const CopyText = () => {
   return (
     <div className="relative flex items-center justify-between py-1 rounded-md bg-gray-100 outline-0 mt-4 px-4 mr-4 w-4/5 mt-2">
       <p className="text-sm">Zenith Bank – 1015638967</p>
-      <CopyToClipboard text="1016041043" onCopy={copyTextToClipboard}>
+      <CopyToClipboard text={number} onCopy={copyTextToClipboard}>
         <span className="p-2 cursor-pointer" onClick={showCopied}>
           <ContentCopyRoundedIcon fontSize="small" />
         </span>

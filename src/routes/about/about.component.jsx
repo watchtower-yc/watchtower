@@ -1,11 +1,12 @@
 import PastorT from "../images/Pastor.png";
 import PastorI from "../images/Apastor.png";
 import Truth from "../images/truth.png";
+import Footer from "../../components/footer/footer.component";
 
 const About = () => {
   return (
-    <div className=" mt-4">
-      <div>
+    <div className="mt-4">
+      <div className="container mx-auto px-4">
         <h1 className=" font-extrabold text-2xl text-blue-900">
           About Watchtower
         </h1>
@@ -16,7 +17,7 @@ const About = () => {
       </div>
 
       {/* Watchtower description */}
-      <div className=" text-base mt-4 h-4/6 grid grid-cols-1 gap-5 ">
+      <div className="container mx-auto px-4 text-base mt-4 h-4/6 grid grid-cols-1 gap-5 ">
         <p>
           When God told Noah to build an Ark in Genesis 7, it was intended to be
           a means of salvation from the looming menace that eventually took
@@ -49,10 +50,10 @@ const About = () => {
       </div>
 
       {/* Our leadership */}
-      <section className=" mt-14">
+      <section className="container mx-auto px-4 mt-14">
         <h1 className=" font-extrabold text-2xl text-blue-900">LEADERSHIP</h1>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2  mt-20">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-8  mt-20">
           <div className=" text-center flex flex-col justify-center items-center">
             <img className=" lg:w-3/5 w-full" src={PastorT} alt="" />
 
@@ -75,7 +76,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2  mt-20">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 order-last md:order-first  mt-20">
           <div className=" flex items-center justify-center px-0 md:px-9 items-center">
             <p>
               Lorem ipsum dolor sit amet consectetur. Dui in commodo
@@ -87,7 +88,7 @@ const About = () => {
               viverra. Molestie ornare nunc imperdiet tincidunt. Show more.
             </p>
           </div>
-          <div className=" text-center flex flex-col justify-center items-center">
+          <div className=" text-center flex flex-col order-first md:order-last justify-center items-center">
             <img className=" lg:w-3/5 w-full" src={PastorI} alt="" />
 
             <div className=" mt-4">
@@ -99,12 +100,12 @@ const About = () => {
       </section>
 
       {/* Anthem */}
-      <section className=" mt-14">
+      <section className="container mx-auto px-4 mt-14">
         <h1 className=" font-extrabold text-2xl text-blue-900">
           Watchtower Anthem
         </h1>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 mt-8 gap-8">
+        <div className=" grid md:grid-cols-2 mt-8 gap-8">
           <div className=" px-0 py-8 lg:px-32 flex justify-center items-center">
             <p>
               We are Watchmen, in the tower, We bear the sword, to engrave the
@@ -138,52 +139,55 @@ const About = () => {
       </section>
 
       {/* watchtower sections */}
-      <section className=" mt-14">
+      <section className="container mx-auto px-4 mt-14 mb-20">
         <h1 className=" mt-16 font-extrabold text-2xl text-blue-900">
           The Watchtower Sections
         </h1>
 
-        <div className=" grid grid-cols-2">
+        <div className=" grid md:grid-cols-2 gap-8">
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Truth Ambassadors</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Engravers</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Sword Bearers</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Royal Priesthood</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">The Laudators</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Watchtower Football Academy</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Watchtower Dance crew</h5>
           </div>
 
           <div className=" mt-8 text-center">
             <img src={Truth} alt="" />
-            <h5 className=" font-bold text-lg">The Engravers</h5>
+            <h5 className=" font-bold text-lg">Watch Tower Chess Team</h5>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

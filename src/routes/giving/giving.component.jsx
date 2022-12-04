@@ -31,7 +31,7 @@ const Giving = () => {
       name: "fullname",
       type: "text",
       placeholder: "Firstname Lastname",
-      errorMessage: "Your fullname is required",
+      errorMessage: "Your fullname is required, Use a single name without space",
       label: "Fullname",
       pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
@@ -43,7 +43,7 @@ const Giving = () => {
       placeholder: "Enter Phone Number",
       errorMessage: "Must be a valid phone number",
       label: "Phone",
-      pattern: "^[0-9]{11-15}$",
+      pattern: "^[+]?[(]?[0-9]{3,20}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]",
       required: true,
     },
     {
@@ -53,7 +53,7 @@ const Giving = () => {
       placeholder: "Enter amount paid",
       errorMessage: "Must be a valid number",
       label: "Amount",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      pattern: "^[+]?[(]?[0-9]{3,20}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]",
       required: true,
     },
     {
@@ -103,7 +103,7 @@ const Giving = () => {
         </p>
         <p className="text-center italic font-thin mt-8">Malachi 3:10</p>
       </section>
-      <section className="container mx-auto mb-20">
+      <section className="container mx-auto px-4 mb-20">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="text-sm font-bold italic mb-8">
@@ -169,11 +169,11 @@ const Giving = () => {
               <p className="font-bold mb-4">Copy account number:</p>
               <div className="mb-8">
                 <p className="text-sm font-medium">Tithe and Offering</p>
-                <CopyText />
+                <CopyText number="1015638967" />
               </div>
               <div>
                 <p className="text-sm font-medium">Project Offering</p>
-                <CopyText />
+                <CopyText number="1016041043" />
               </div>
             </div>
           </div>

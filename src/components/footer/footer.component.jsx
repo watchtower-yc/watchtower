@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="">
             <BrandLogo logoType="white" height="h-16" />
             <p className="text-xs md:max-w-xs mt-4 text-gray-400">
-              Cephas Digital, Adjacent Seventh day Adventist Student Fellowship,
-              Under G., Ogbomoso, Nigeria.
+              The Tower, Adjacent Daniela Hostel, Under-G, LAUTECH,Ogbomoso, Oyo
+              state, Nigeria.
             </p>
           </div>
           <div>
