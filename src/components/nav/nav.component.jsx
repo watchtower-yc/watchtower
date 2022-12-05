@@ -21,7 +21,7 @@ const Nav = () => {
   };
 
   return (
-    <div className=" mx-16 " >
+    <div>
       <p>nav</p>
       <Outlet />
     </div>
