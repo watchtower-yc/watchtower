@@ -1,0 +1,11 @@
+.format input:invalid[focused="true"] {
+    border: 1px solid red;
+}
+
+.format span {
+    display: none;
+}
+
+.format input:invalid[focused="true"] ~ span {
+    display: block;
+}
