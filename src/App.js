@@ -7,6 +7,7 @@ import Giving from "./routes/giving/giving.component";
 import Home from "./routes/home/home.route";
 import Sermons from "./routes/sermons/sermons.route";
 import Testimonies from "./routes/testimonies/testimonies.route";
+import ErrorPage from "./routes/error/errorComponet";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/online-giving" element={<Giving />} />
         <Route path="/sermons" element={<Sermons />} />
         <Route path="/testimonies" element={<Testimonies />} />
+        <Route path="*" element={<ErrorPage />}></Route>
       </Route>
     </Routes>
   );

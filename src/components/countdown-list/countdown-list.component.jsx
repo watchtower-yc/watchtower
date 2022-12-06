@@ -6,7 +6,7 @@ const CountdownList = () => {
   const [mins, setMins] = useState();
   const [sec, setSec] = useState();
 
-  const countDownDate = new Date("Dec 16, 2022 8:30:00");
+  const countDownDate = new Date("Dec 11, 2022 8:30:00");
 
   // Update the count down every 1 second
   var x = setInterval(function () {

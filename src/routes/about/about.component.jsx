@@ -1,6 +1,6 @@
 import PastorT from "../images/Pastor.png";
 import PastorI from "../images/Apastor.png";
-import Engraver from "../images/Engraver.png";
+import Engraver from "../images/engraver.png";
 import Footer from "../../components/footer/footer.component";
 import { Zoom } from "react-reveal";
 import Footbal from "../images/Football.png"
