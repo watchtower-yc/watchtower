@@ -8,6 +8,7 @@ import Home from "./routes/home/home.route";
 import Sermons from "./routes/sermons/sermons.route";
 import Testimonies from "./routes/testimonies/testimonies.route";
 import ErrorPage from "./routes/error/errorComponet";
+import Csr from "./routes/csr/csr";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/online-giving" element={<Giving />} />
         <Route path="/sermons" element={<Sermons />} />
         <Route path="/testimonies" element={<Testimonies />} />
+        <Route path="/csr" element={<Csr />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
       </Route>
     </Routes>

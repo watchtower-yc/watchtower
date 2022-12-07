@@ -1,9 +1,12 @@
 import React from 'react'
+import Footer from '../../components/footer/footer.component';
 
 const ErrorPage = () => {
   return (
-      <div className=' w-screen h-screen flex flex-col justify-center items-center'>
+      <div className=' flex flex-col'>
           <img src={require('../images/404.png')} alt="" />
+
+          <Footer />
       </div>
   )
 }
