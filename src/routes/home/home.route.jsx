@@ -7,7 +7,7 @@ import { Flip, Zoom } from "react-reveal";
 const Home = () => {
   return (
     <div>
-      <div className="banner relative text-white py-48 mb-20">
+      <div className="banner relative flex flex-col justify-center items-center text-white py-48 mb-20">
         <div className="absolute inset-0 -z-20 overflow-hidden">
           <img
             src={require("../images/4.jpg")}
@@ -17,11 +17,15 @@ const Home = () => {
         </div>
         <div className="absolute inset-0 bg-black opacity-50 -z-10 header"></div>
         <Flip>
-          <p className="text-center mont text-4xl md:text-8xl">
-            YOU'RE <span className="paris">invited</span>
+          <p className="text-center mont text-4xl md:text-7xl">
+            YOU'RE WELCOME TO THE TOWER
           </p>
           <p className="text-center mont">to our weekely service.</p>
         </Flip>
+
+        <button className=" px-5 py-3 mt-3 rounded-lg bg-blue-900 text-white font-extrabold">
+          READ MORE
+        </button>
       </div>
       <section className="container mx-auto mb-20 px-4">
         <Zoom>
@@ -63,14 +67,14 @@ const Home = () => {
           </div>
         </Zoom>
       </section>
-      <section className="container mx-auto mb-20">
+      <section className="container  mx-auto mb-20">
         <p className="font-bold text-2xl uppercase text-center">
-          gathering time
+          Gathering time
         </p>
         <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
         <div className="mt-8 grid md:grid-cols-2 gap-8">
           <Zoom>
-            <div className="text-center">
+            <div className="text-center bg-white flex flex-col justify-center items-center h-60 shadow-2xl">
               <p className="font-medium text-md uppercase mb-4">
                 mid-week service
               </p>
@@ -79,7 +83,7 @@ const Home = () => {
             </div>
           </Zoom>
           <Zoom>
-            <div className="text-center md:text-left">
+            <div className="text-center  bg-white flex flex-col justify-center items-center h-60 shadow-2xl md:text-left">
               <p className="font-medium text-md uppercase mb-4">
                 mid-week service
               </p>
@@ -115,7 +119,24 @@ const Home = () => {
           <AppButton children="more details" buttonType="primary" />
         </div>
       </section>
-      <section className="container mx-auto mb-20 px-4">
+      {/* Prayer */}
+      <section className=" flex flex-col justify-center items-center mb-20 py-10 px-20 text-center bg-purple-200">
+        <p className=" font-extrabold text-2xl">NEED A PRAYER</p>
+        <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
+
+        <p className=" mt-5">
+          Sometimes life becomes too much to handle, leaving us with nothing but
+          questions. Hope may seem far away in those circumstances. Our attitude
+          toward the One who is waiting to hear us changes as a result of
+          prayer, which is a wonderful thing. Whatever you’re dealing with, we
+          would love to pray for you!
+        </p>
+
+        <button className=" bg-black flex items-center mt-8 text-white px-8 py-3">ASK FOR A PRAYER
+        <img className=" ml-2" src={require("../images/Vector.png")} alt="" />
+        </button>
+      </section>
+      <section className="container  mx-auto mb-20 px-4">
         <p className="font-bold text-2xl uppercase text-center">plan a visit</p>
         <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
         <div className="mt-8 grid gap-8 md:grid-cols-2">

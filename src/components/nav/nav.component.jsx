@@ -2,7 +2,6 @@ import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { Slide } from "react-reveal";
-
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { Fragment } from "react";
