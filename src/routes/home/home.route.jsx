@@ -37,24 +37,28 @@ const Home = () => {
               <div className="border border-gray-400 mt-1 bg-black w-40 mx-auto"></div>
               <div className="mt-8">
                 <p className="mb-4">
-                  God has given us a mandate to raise role models, and He has
-                  indeed been faithful, backing our dedication and hard work
-                  with a great harvest of transformed lives.
+                  Christ's instruction to us is crystal clear; to raise
+                  dependable youths and build a family for Him!
                 </p>
                 <p className="mb-4">
-                  It is top priority for us that you partake of wholesome
-                  worship, edifying messages to build you up and positive
-                  interactions.
+                  We have pursued this vision relentlessly over the years and
+                  Jesus has rewarded our labor of love with an harvest of
+                  transformed lives.
                 </p>
                 <p className="mb-4">
-                  Watchtower is a place where you belong, where people are real
-                  and they really care for you. At watchtower we love people and
-                  we love Jesus.
+                  If what your soul yearns for is genuine love and acceptance,
+                  Jesus has kept a family for you! We are immensely loved by
+                  Abba and He teaches us to be an extension of it to everyone we
+                  meet.
                 </p>
                 <p className="mb-4">
-                  No matter what you like, where you’re from or where you’ve
-                  been WatchTower is a place where you are loved. Come
-                  experience God this week.
+                  No matter who you are and what you've been through, we want
+                  you to know that Christ, out of His sheer love has made
+                  provisions for you already.
+                </p>
+                <p className="mb-4">
+                  Come, come home to Jesus, welcome to His family, welcome to
+                  Watchtower!
                 </p>
               </div>
             </div>
@@ -132,8 +136,9 @@ const Home = () => {
           would love to pray for you!
         </p>
 
-        <button className=" bg-black flex items-center mt-8 text-white px-8 py-3">ASK FOR A PRAYER
-        <img className=" ml-2" src={require("../images/Vector.png")} alt="" />
+        <button className=" bg-black flex items-center mt-8 text-white px-8 py-3">
+          ASK FOR A PRAYER
+          <img className=" ml-2" src={require("../images/Vector.png")} alt="" />
         </button>
       </section>
       <section className="container  mx-auto mb-20 px-4">

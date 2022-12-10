@@ -1,9 +1,15 @@
 import PastorT from "../images/Pastor.png";
 import PastorI from "../images/Apastor.png";
-import Engraver from "../images/engraver.png";
+import TruthAmbassadors from "../../assets/img/truth-ambassadors.png";
+import Engravers from "../../assets/img/engravers.png";
+import SwordBearers from "../../assets/img/sword-bearers.png";
+import RoyalPriesthood from "../../assets/img/royal-priesthood.png";
+import Laudators from "../../assets/img/the-laudators.png";
+import FootballTeam from "../../assets/img/football-team.png";
+import Drama from "../../assets/img/drama.png";
+import Dance from "../../assets/img/dance-crew.png";
 import Footer from "../../components/footer/footer.component";
 import { Zoom } from "react-reveal";
-import Footbal from "../images/Football.png"
 
 const About = () => {
   return (
@@ -85,13 +91,10 @@ const About = () => {
           <div className=" flex justify-center px-0 md:px-9 items-center">
             <Zoom>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Dui in commodo
-                sollicitudin dolor aliquam eget vitae. Vel enim ante ipsum urna
-                viverra. Molestie ornare nunc imperdiet tincidunt placerat vitae
-                eu auctor. Sed elit sagittis orci suspendisse nisl velit massa
-                ipsum, Lorem ipsum dolor sit amet consectetur. Dui in commodo
-                sollicitudin dolor aliquam eget vitae. Vel enim ante ipsum urna
-                viverra. Molestie ornare nunc imperdiet tincidunt. Show more.
+                The Pastor in charge of RCCG The Watchtower. His life's mantra
+                is simple; to make Jesus the focus and ensure others do the
+                same. This has been exemplified in every aspect and we are
+                blessed to be a part of this leadership.
               </p>
             </Zoom>
           </div>
@@ -101,13 +104,9 @@ const About = () => {
           <div className=" flex items-center justify-center px-0 md:px-9 items-center">
             <Zoom>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Dui in commodo
-                sollicitudin dolor aliquam eget vitae. Vel enim ante ipsum urna
-                viverra. Molestie ornare nunc imperdiet tincidunt placerat vitae
-                eu auctor. Sed elit sagittis orci suspendisse nisl velit massa
-                ipsum, Lorem ipsum dolor sit amet consectetur. Dui in commodo
-                sollicitudin dolor aliquam eget vitae. Vel enim ante ipsum urna
-                viverra. Molestie ornare nunc imperdiet tincidunt. Show more.
+                The Assistant Pastor in Charge of the Watchtower and her
+                dedication to God's vision remains a blessing we will always be
+                grateful for.
               </p>
             </Zoom>
           </div>
@@ -186,7 +185,7 @@ const About = () => {
         <div className=" grid md:grid-cols-2 gap-8">
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={TruthAmbassadors} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">Truth Ambassadors</h5>
@@ -195,7 +194,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={Engravers} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">Engravers</h5>
@@ -204,7 +203,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={SwordBearers} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">Sword Bearers</h5>
@@ -213,7 +212,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={RoyalPriesthood} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">Royal Priesthood</h5>
@@ -222,7 +221,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={Laudators} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">The Laudators</h5>
@@ -231,7 +230,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Footbal} alt="" />
+              <img src={FootballTeam} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">
@@ -242,7 +241,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={Dance} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">Watchtower Dance crew</h5>
@@ -251,7 +250,7 @@ const About = () => {
 
           <div className=" mt-8 text-center">
             <Zoom>
-              <img src={Engraver} alt="" />
+              <img src={Drama} alt="" />
             </Zoom>
             <Zoom>
               <h5 className=" font-bold text-lg">Watch Tower Chess Team</h5>

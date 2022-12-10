@@ -7,13 +7,13 @@ const FormInput = ({ label, errMsg, pattern, ...restprops }) => {
     setFocused(true);
   };
   return (
-    <div className="mb-4 format">
+    <div className="mb-4">
       <label htmlFor="">
         {label} <span className="text-red-400">*</span>
       </label>
-      <div className="mt-1">
+      <div className="mt-1 format">
         <input
-          className="h-10 px-4 w-4/5 border border-gray-400 rounded-md"
+          className="h-10 px-4 w-4/5 border border-gray-400 rounded-md outline-none"
           onBlur={handleFocus}
           focused={focused.toString()}
           pattern={pattern}

@@ -4,7 +4,7 @@ const routes = [
     // { link: "/sermons", name: "Sermons" },
     { link: "/testimonies", name: "Testimonies" },
     { link: "/online-giving", name: "Giving" },
-    // { link: "/giving", name: "CSR" },
+    { link: "/csr", name: "CSR" },
   ];
   
   export default routes;
