@@ -3,8 +3,12 @@ import AppButton from "../../components/app-button/app-button.component";
 import Footer from "../../components/footer/footer.component";
 import CountdownList from "../../components/countdown-list/countdown-list.component";
 import { Flip, Zoom } from "react-reveal";
+import Carousel from "nuka-carousel/lib/carousel";
+import { Download } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  let navigate = useNavigate();
   return (
     <div>
       <div className="banner relative flex flex-col justify-center items-center text-white py-48 mb-20">
@@ -106,21 +110,32 @@ const Home = () => {
       </section>
       <section className="mb-20 px-4">
         <p className="font-bold text-2xl uppercase text-center">
-          upcoming event
+          upcoming event january 2023
         </p>
         <div className="border border-gray-400 mt-1 bg-black w-20 mx-auto"></div>
         <div className="overflow-hidden mt-8">
-          <img
-            src={require("../../assets/img/carol-banner.png")}
-            alt="next-event"
-            className="mx-auto"
-          />
+          <Carousel autoplay={true} autoplayInterval={3} >
+            <img
+              src={require("../../assets/img/listen1.png")}
+              alt="next-event"
+              className="mx-auto"
+            />
+            <img
+              src={require("../../assets/img/pursuit1.png")}
+              alt="next-event"
+              className="mx-auto"
+            />
+          </Carousel>
         </div>
-        <div className="container mx-auto mb-12">
+        {/* <div className="container mx-auto mb-12">
           <CountdownList />
-        </div>
-        <div className="flex justify-center align-center">
-          <AppButton children="more details" buttonType="primary" />
+        </div> */}
+        <div className="flex mt-7 justify-center align-center">
+          <AppButton  children={<div onClick={() => navigate("/sermons")} className=" flex gap-2">
+            
+            <h1 >DOWNLOAD THE TEACHINGS</h1>
+            <Download />
+          </div>} buttonType="primary" />
         </div>
       </section>
       {/* Prayer */}

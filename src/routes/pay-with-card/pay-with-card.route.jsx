@@ -5,6 +5,8 @@ import FormInput from "../../components/form-input/form-input.component";
 import Alert from "@mui/material/Alert";
 import { Fade } from "react-reveal";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+import FlutterPay from "../../components/Flutterwave/FlutterPay";
+
 
 const defaultForm = {
   fullname: "",
@@ -79,7 +81,7 @@ const PayWithCard = () => {
     },
   ];
   const paymentDetails = {
-    public_key: inputValue.reference === "Tithe" || "Offering" ? "FLWPUBK_TEST-86212289d3c67e01d8656934857df9e8-X" : "vvv",
+    public_key: inputValue.reference === "Tithe" || "Offering" ? "FLWPUBK_TEST-6f65d410ecdceabf9fc990be8ebfb213-X" : "vvv",
     tx_ref: Date.now(),
     amount: inputValue.amount,
     currency: "NGN",
@@ -170,11 +172,8 @@ const PayWithCard = () => {
           </div>
         </div>
         <div>
-          <AppButton
-            children="Submit"
-            buttonType="primary"
-            type="submit"
-          />
+          <AppButton />
+            <FlutterPay />
         </div>
       </form>
     </div>

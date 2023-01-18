@@ -32,19 +32,19 @@ const Footer = () => {
                 <Link to="/">Home</Link>
               </li>
               <li className="mt-2">
-                <Link to="/our-story">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li className="mt-2">
-                <Link to="/testimony">Sermons</Link>
+                <Link to="/sermons">Sermons</Link>
               </li>
               <li className="mt-2">
-                <Link to="/courses">Testimonies</Link>
+                <Link to="/testimonies">Testimonies</Link>
               </li>
               <li className="mt-2">
-                <Link to="/">Giving</Link>
+                <Link to="/online-giving">Giving</Link>
               </li>
               <li className="mt-2">
-                <Link to="/">CSR</Link>
+                <Link to="/csr">CSR</Link>
               </li>
             </ul>
           </div>
