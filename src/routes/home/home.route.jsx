@@ -1,7 +1,7 @@
 // import bannerImg from "../../assets/img/banner-img.png";
 import AppButton from "../../components/app-button/app-button.component";
 import Footer from "../../components/footer/footer.component";
-import CountdownList from "../../components/countdown-list/countdown-list.component";
+// import CountdownList from "../../components/countdown-list/countdown-list.component";
 import { Flip, Zoom } from "react-reveal";
 import Carousel from "nuka-carousel/lib/carousel";
 import { Download } from "@mui/icons-material";

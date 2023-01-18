@@ -1,9 +1,8 @@
-import { Download, Headphones, WindowRounded } from "@mui/icons-material";
+import { Download, Headphones} from "@mui/icons-material";
 import Carousel from "nuka-carousel/lib/carousel";
-import { useNavigate } from "react-router-dom";
 import Footer from "../../components/footer/footer.component";
 const Sermons = () => {
-  let navigate = useNavigate();
+
   return (
     <div>
       <div className="flex w-full h-full flex-col mb-24 justify-center items-center py-2 container mx-auto px-0 md:px-10">
