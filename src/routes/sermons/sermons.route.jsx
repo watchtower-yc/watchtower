@@ -1,8 +1,7 @@
-import { Download, Headphones} from "@mui/icons-material";
+import { Download, Headphones } from "@mui/icons-material";
 import Carousel from "nuka-carousel/lib/carousel";
 import Footer from "../../components/footer/footer.component";
 const Sermons = () => {
-
   return (
     <div>
       <div className="flex w-full h-full flex-col mb-24 justify-center items-center py-2 container mx-auto px-0 md:px-10">
@@ -26,7 +25,7 @@ const Sermons = () => {
           </div>
 
           <div className=" flex justify-center items-center">
-            <div className=" mt-40 grid md:grid-cols-3  grid-cols-1 gap-8">
+            <div className=" mt-40 grid lg:grid-cols-3  grid-cols-1 gap-8">
               <div className="md:w-[345px] w-[290px] shadow-slate-500 shadow-2xl  ">
                 <img src={require("../../assets/img/sermon1.png")} alt="" />
 
@@ -79,9 +78,14 @@ const Sermons = () => {
                   teaching
                 </p>
                 <div className=" px-5 mt-24 flex justify-between">
-                  <button onClick={() => {
-                    window.open("https://drive.google.com/file/d/18rPlw_eyx1hleb2HZsgGpKff8v7c7yXt/view?usp=drivesdk")
-                  }} className=" bg-blue-900 text-white font-bold flex items-center px-2 py-2 justify-center rounded-lg">
+                  <button
+                    onClick={() => {
+                      window.open(
+                        "https://drive.google.com/file/d/18rPlw_eyx1hleb2HZsgGpKff8v7c7yXt/view?usp=drivesdk"
+                      );
+                    }}
+                    className=" bg-blue-900 text-white font-bold flex items-center px-2 py-2 justify-center rounded-lg"
+                  >
                     <h1>DOWNLOAD</h1> <Download className=" mr-3" />
                   </button>
                   <button className=" bg-blue-900 text-white font-bold flex items-center px-2 py-2 justify-center rounded-lg">
@@ -111,16 +115,42 @@ const Sermons = () => {
             of eternal life. I am Born Again. Thank You Jesus. Hallelujah!
           </div>
         </div>
-          </section>
-          <section className="mt-24 mb-24 flex flex-col text-blue-900 items-center w-full h-100">
-        <div className=" flex flex-col w-[80%] mt-4 justify-center items-center">
-          <input type="text" className=" border-[2px] border-blue-900 w-full px-3 py-3 outline-none " placeholder="FULL NAME" />
-          <div className="w-full flex">
-            <input className="border-[2px] border-blue-900 w-full px-3 py-3 outline-none" type="email" placeholder="EMAIL" name="" id="" />
-            <input className="border-[2px] border-blue-900 w-full px-3 py-3 outline-none" type="tel" name="" id="" placeholder="PHONE NUMBER" />
-            <input className="border-[2px] bg-blue-900 text-white font-bold border-blue-900 w-full px-3 py-3 outline-none" type="submit" value="SUBMIT" placeholder="SUBMIT" />
+      </section>
+      <section className="mt-24 mb-24 flex flex-col text-blue-900 items-center w-full h-100">
+        <form action="" className=" w-full flex justify-center">
+          <div className=" flex flex-col w-[80%] mt-4 justify-center items-center">
+            <input
+              required
+              type="text"
+              className=" border-[2px] border-blue-900 w-full px-3 py-3 outline-none "
+              placeholder="FULL NAME"
+            />
+            <div className="w-full flex md:flex-row flex-col">
+              <input
+                required
+                className="border-[2px] border-blue-900 w-full px-3 py-3 outline-none"
+                type="email"
+                placeholder="EMAIL"
+                name=""
+                id=""
+              />
+              <input
+                required
+                className="border-[2px] border-blue-900 w-full px-3 py-3 outline-none"
+                type="tel"
+                name=""
+                id=""
+                placeholder="PHONE NUMBER"
+              />
+              <input
+                className="border-[2px] bg-blue-900 text-white font-bold border-blue-900 w-full px-3 py-3 outline-none"
+                type="submit"
+                value="SUBMIT"
+                placeholder="SUBMIT"
+              />
+            </div>
           </div>
-        </div>
+        </form>
       </section>
 
       <Footer />
