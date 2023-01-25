@@ -46,7 +46,7 @@ const Sermons = () => {
                   <button
                     onClick={() => {
                       window.open(
-                        "https://drive.google.com/file/d/18qFVq0w125buWzW1kivp6ehbDXQ-0kAq/view?usp=drivesdk"
+                        `https://drive.google.com/file/d/18qFVq0w125buWzW1kivp6ehbDXQ-0kAq/view?usp=sharing`
                       );
                     }}
                     className=" bg-blue-900 text-white font-bold flex items-center px-2 py-2 justify-center rounded-lg"
@@ -81,7 +81,7 @@ const Sermons = () => {
                   <button
                     onClick={() => {
                       window.open(
-                        "https://drive.google.com/file/d/18rPlw_eyx1hleb2HZsgGpKff8v7c7yXt/view?usp=drivesdk"
+                        "https://drive.google.com/file/d/18rPlw_eyx1hleb2HZsgGpKff8v7c7yXt/view?usp=sharing"
                       );
                     }}
                     className=" bg-blue-900 text-white font-bold flex items-center px-2 py-2 justify-center rounded-lg"
