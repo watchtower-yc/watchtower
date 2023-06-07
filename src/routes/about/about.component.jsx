@@ -13,7 +13,7 @@ import { Zoom } from "react-reveal";
 
 const About = () => {
   return (
-    <div className="mt-4">
+    <div className="mt-4 font-serrat">
       <div className="container mx-auto px-4">
         <Zoom>
           <h1 className=" font-extrabold text-2xl text-blue-900">

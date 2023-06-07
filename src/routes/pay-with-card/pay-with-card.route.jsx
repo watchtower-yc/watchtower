@@ -148,6 +148,7 @@ const PayWithCard = () => {
               required
               pattern={input.pattern}
               type={input.type}
+              key={input.id}
             />
           ))}
         </div>

@@ -23,7 +23,7 @@ const Nav = () => {
   return (
     <Fragment>
       <div>
-        <nav className="flex justify-between bg-white border-b py-2 container mx-auto px-0 md:px-10 items-center">
+        <nav className="flex font-serrat justify-between bg-white border-b py-2 container mx-auto px-0 md:px-10 items-center">
           <BrandLogo logoType="black" height="h-12" />
           <div className="lg:hidden absolute right-8 z-50" onClick={handleNav}>
             <Fade when={!showNav}>
